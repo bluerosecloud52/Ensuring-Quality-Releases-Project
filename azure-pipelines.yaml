@@ -160,9 +160,9 @@ stages:
       - job: PostmanTests
         steps:
           - task: NodeTool@0
-            displayName: Install Node v12.X
+            displayName: Install Node v16.X
             inputs:
-              versionSpec: '12.x'
+              versionSpec: '16.x'
           - task: CmdLine@2
             displayName: Install Newman
             inputs:
