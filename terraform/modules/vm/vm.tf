@@ -20,13 +20,13 @@ resource "azurerm_linux_virtual_machine" "test" {
   network_interface_ids = [azurerm_network_interface.test.id]
   admin_ssh_key {
     username   = var.admin_username
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDX0iF+V/v/ECrI7vpA2403fnlD2YVvopPujDMf7MH1x/FJpvzNTx3GHlGd5O1fg/OVrf0w6k/TOj8JANBdncj0G0D4s6ZBegbj6LMbxLCAWSVewjNHtlKzXQHCnmqTaNdc/E0Q8t/2/Z3+92uS4p/WAeKxH7VQVgch+aTpxnRT+Hnwedz/quo9u75tCDzFjSSRkDWsXeK//uiklT9MAvTNkENogCY3sBnsUMD2/ZeRvMLsCCp3a+deRsjQhWvEliSssGENpVTYBx5OtLRJ5eVOb4QIxNfCuuYHgXqFC8BFcnXCyEN1C3tYKyXPpI30uTjkhzSkdCTZWX7t1/6fEESxjp7/yd/DY5HI6C045Gj4dA+MYqj4tunCXPTNkH/guQ5GTJc+k5iHPX5vrlWNwznivKTDjRbXD73pztEmzmttZRwOIlG8iwkfDpp+3q3p8I04jKXEKhVoIq3M2QzoufVL1kCM0/3ntRDzGXMs6eXXpH0r7dGgMF09uBi4rO09bM0= generated-by-azure"
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDL2wY6ZcMzMlUtCnyzCPUya5KU/JiF5ayIag4sbAj80H2TlZ4InVTSoTmYliPRnZTA7UeT154hptn7Z/i80AhIRHLq4xHYILE4YPXRyx2CwuV4fXxNQjO8EYkMbqwpZb6p+T+pVngvQRkIt199njd0wD14Q6MbxCSoSApaWj6MfbC82Aju8U0oIqYQBgB83LE/LsoLL+cnTJo479N4Si4q3c6d/4mT1HbBeNCCG+EE8Le25dGo3yqZMG29o6I4SKxDfQt67yq8+E13KVJv5KXjPGUBGPLATNc0OOfjWOxag0hgSgey1fuUO2+B7GDXQ5bG0GLThmDH0KG8fy6pPdaC0rllFU3m2j8X2udRu4M7WoAZzrpNn8e/kA3X9hbuCCidYBmhB3bf8DOPJY3FL92nSY+2fZkrBhfVsatHFx5CTZtSJAJcKp9DMZgY3njgkeHD7gL8qkH5GAwpTGIL+OAVCQVs0nkG0mA9IQCYz35VFWecrHfuVKbGBi1lUKd6aeU= generated-by-azure"
   }
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
   source_image_reference {
-    id = "/subscriptions/ad6befd3-6a77-4714-b24d-181b38cb2753/resourceGroups/Azuredevops/providers/Microsoft.Compute/galleries/AzureVirtualMachineGalllery/images/AzureVirtualMachineUbuntu"
+    id = "/subscriptions/c2974833-f9d6-49e2-b843-74513c83a919/resourceGroups/Azuredevops/providers/Microsoft.Compute/galleries/AzureVirtualMachineGalllery/images/AzureVirtualMachineUbuntu"
   }
 }
